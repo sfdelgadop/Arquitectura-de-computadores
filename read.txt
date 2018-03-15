@@ -1,0 +1,38 @@
+loop1	ldi	r0	y
+	ld	r1	r0
+	ldi	r0	0x00
+	sub	r1	r0
+	ldi	r0	endloop1
+	jn	r0	r0
+	jz	r0	r0
+	ldi	r0	p
+	ld	r1	r0
+	ldi	r0	x
+	ld	r2	r0
+	add	r1	r2
+	ldi	r0	p
+	st	r1	r0
+	ldi	r0	y
+	ld	r1	r0
+	ldi	r0	0x01
+	sub	r1	r0
+	ldi	r0	y
+	st	r1	r0
+	ldi	r0	loop1
+	jmp	r0	r0
+endloop1	ldi	r0	0xfd
+	ldi	r1	0x01
+	st	r1	r0
+	ldi	r0	0xfe
+	ldi	r1	p
+	ld	r1	r1
+	st	r1	r0
+	ldi	r0	0xfd
+	ldi	r1	0x02
+	st	r1	r0
+loopend	ldi	r0	loopend
+	jmp	r0	r0
+.data				
+x	5
+y	3
+p	0

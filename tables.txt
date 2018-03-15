@@ -1,0 +1,10 @@
+Labels
+loop1     |	0
+endloop1  |	20
+loopend   |	30
+
+
+Variables
+p	|	35
+x	|	33
+y	|	34
